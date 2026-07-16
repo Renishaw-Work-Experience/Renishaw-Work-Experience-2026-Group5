@@ -15,6 +15,7 @@ Add exception handling
 Consider looking into how the UI and backend will work together
 Change how the connection works (my opinion)
 Use JSON for formatting messages
+Encryption
 
 We should look at all of these before any additional features are implemented.
 
