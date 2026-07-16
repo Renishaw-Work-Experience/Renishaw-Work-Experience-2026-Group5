@@ -1,0 +1,21 @@
+Fixes: The port number used is restricted on my PC - Switched to one I know works
+
+Changed unread messages to not iterate the clear messages line - I assumed that all of the messages should be printed before clearing
+
+Largest fix - The current pattern creates a new socket connection every time an option is selected - this is not exactly best practices.
+What actually causes the breakage is that the server was not configured to accept any new connections - after a new option was picked a disconnection occurs.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+What Group 5 need to do:
+Decide between implementing the changes this way or redoing how the connection is configured and maintained altogether
+
+What Group 5 should do:
+Add exception handling
+Consider looking into how the UI and backend will work together
+Change how the connection works (my opinion)
+Use JSON for formatting messages
+
+We should look at all of these before any additional features are implemented.
+
+Let me know of any struggles you are having with your current component. I will need to review what each of you have done at some point today.
